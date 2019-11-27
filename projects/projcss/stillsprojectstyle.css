@@ -11,6 +11,7 @@ body {
   text-align: center;
   display: block;
   transform: translateY(20vh);
+  font-size: 14px;
 }
 
 .projCredits {
