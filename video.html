@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+  <title>ourros</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="css/video_style.css">
+  <link rel="stylesheet" type="text/css" href="css/nav_style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="js/three.js"></script>
+  <script src="js/OBJLoader.js"></script>
+  <script src="js/OrbitControls.js"></script>
+
+</head>
+
+
+<body>
+
+      <div id="logo"><a href="index.html"><script src="js/main.js"></script></a></div>
+
+      <nav role="navigation" class="center">
+        <ul class="left">
+          <li><span class="workLink"><a href="work.html">work</a></span>
+            <ul class="dropdown">
+              <li><a href="work.html">featured</a></li><br>
+              <li><a href="video.html">music video</a></li><br>
+              <li><a href="design.html">design</a></li><br>
+              <li><a href="photo.html">photography</a></li><br>
+            </ul>
+          </li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+        <ul class="right">
+          <li><a href="contact.html">contact</a></li>
+          <li><a href="store.html">store</a></li>
+        </ul>
+      </nav>
+
+    <div class="grid-container">
+      <div class="c1">
+        <a href="projects/rememberme.html"><img src="workimg/rememberme.jpg"></a>
+        <div class="info">
+          UMI<br>  Remember Me
+        </div>
+      </div>
+
+      <div class="c2">
+        <a href="projects/lightyear.html"><img src="workimg/lightyear.jpeg"></a>
+        <div class="info">
+          Kyle Lux<br>  Lightyear
+        </div>
+      </div>
+
+      <div class="c3">
+        <a href="projects/win.html"><img src="workimg/win.jpg"></a>
+        <div class="info">
+          Jay Rock<br>  WIN (Spotify Feature)
+        </div>
+      </div>
+
+      <div class="c4">
+        <a href="projects/friendzone.html"><img src="workimg/friendzone.jpg"></a>
+        <div class="info">
+          UMI<br> Friendzone
+        </div>
+      </div>
+
+      <div class="c5">
+        <a href="projects/pipes.html"><img src="workimg/pipes.jpg"></a>
+        <div class="info">
+          Ashes to Amber<br>  Pipes and Tigers
+        </div>
+      </div>
+
+      <div class="c6">
+        <a href="projects/blacklipstick.html"><img src="workimg/baold.jpeg"></a>
+        <div class="info">
+        Michael Casper<br>  Black Lipstick
+        </div>
+      </div>
+
+      <div class="c7">
+        <a href="projects/highschool.html"><img src="workimg/hs.jpg"></a>
+        <div class="info">
+        UMI<br>  High School
+        </div>
+      </div>
+
+      <div class="c8">
+        <a href="projects/sayitsfine.html"><img src="workimg/sif.jpg"></a>
+        <div class="info">
+        Kyle Lux<br>  Say It's Fine
+        </div>
+      </div>
+
+      <div class="c9">
+        <a href="projects/lullaby.html"><img src="workimg/lullaby.jpg"></a>
+        <div class="info">
+        UMI<br>  Lullaby
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+<!--JQUERY FOR GRID LAYOUT!-->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$('.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9').hover(function() {
+    $(this).children('a').animate({opacity: '-=.5'});
+    $(this).children('.info').animate({opacity: '1'});
+}, function() {
+    $(this).children('a').animate({opacity: '1'});
+    $(this).children('.info').animate({opacity: '0'});
+  });
+
+});
+    </script>
+
+  <body>

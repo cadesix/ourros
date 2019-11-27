@@ -1,0 +1,171 @@
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  margin-top: 7vh;
+}
+
+#logo {
+  margin: 0;
+  padding-right: 15px;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  z-index: 999;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  margin-top: 7vh;
+}
+
+nav {
+    display: flex;
+    /*---*/
+    font-weight: 500;
+    font-style: normal;
+    /*---*/
+    z-index: 999;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    white-space: nowrap;
+}
+
+ul.left {
+  margin-right: 70px;
+  padding-right: 30px;
+}
+
+ul.right {
+  margin-left: 60px;
+}
+
+li {
+  display: inline;
+  padding: .2vw .5vw;
+  transition-duration: 0.5s;
+}
+
+li a {
+    text-align: center;
+    color: #001489;
+}
+
+li a:visited {
+  color: #001489;
+}
+
+li a:hover, li a:active {
+    color: white;
+    cursor: pointer;
+    background-color: #001489;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    line-height: 3vh;
+    padding-top: 2vh;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li:focus-within > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+ul .dropdown {
+  background-color: white;
+}
+
+
+
+/* iphone 6/7/8*/
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+   {
+
+  nav {
+    font-size: 4vw;
+  }
+
+  #logo {
+    margin-top: 3vh;
+    padding-right: 50px;
+
+  }
+
+    ul .dropdown {
+      background-color: white;
+    }
+
+  }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  nav {
+    font-size: 4vw;
+  }
+
+  #logo {
+    display: block;
+    margin-top: 3vh;
+    padding-right: 50px;
+  }
+
+  .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+  .imgCenter {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  /* NAV */
+
+  ul .dropdown {
+    background-color: white;
+  }
+
+  .workLink {
+    pointer-events: none;
+  }
+
+}

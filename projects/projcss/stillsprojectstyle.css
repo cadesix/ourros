@@ -1,0 +1,92 @@
+
+body {
+  font-family: 'Monarcha-Book';
+  color: #001489;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.projInfo {
+  margin: auto 20vw;
+  text-align: center;
+  display: block;
+  transform: translateY(20vh);
+}
+
+.projCredits {
+  margin: auto 20vw;
+  margin-top: 8vh;
+  text-align: center;
+  display: block;
+  transform: translateY(20vh);
+  line-height: 4vh;
+}
+
+.info {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  color: white;
+  text-align: center;
+  opacity: 0;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-------*/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  body {
+    color: #001489;
+    background-color: #ffffff;
+    font-size: 30px;
+  }
+
+  .nav {
+    position: relative;
+    margin-top: 17%;
+    min-height: 40px;
+    font-size: 36px;
+    word-spacing: 10px;
+  }
+
+  #logo {
+    display: block;
+  }
+
+  .grid-container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: auto !important;
+  }
+
+  .row {
+  width: 100%;
+  }
+
+  .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9 {
+  background-color: #ffffff !important;
+  margin-top: 2vh;
+  width: 100%;
+  height: auto !important;
+  }
+
+  .projInfo {
+  margin: auto;
+  text-align: center;
+  display: block;
+  transform: translateY(14vh);
+
+  }
+}

@@ -1,0 +1,77 @@
+
+body {
+  background-color: #001489;
+}
+
+
+#logo {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+
+}
+
+.nav {
+  position: relative;
+  margin: 20px 0;
+  margin-top: 5%;
+  font-family: 'Monarcha-Book';
+  color: #001489;
+  font-size: 18px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 1%;
+}
+.nav li {
+  margin: 0 5px 10px 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+.nav a {
+  padding: 3px 12px;
+  text-decoration: none;
+  color: #001489;
+  line-height: 100%;
+}
+
+.nav a:link {
+  color: white;
+  text-decoration: none;
+}
+.nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover {
+  color: white;
+  text-decoration: none;
+  background: black;
+}
+.nav a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/*-------*/
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  .nav {
+    position: relative;
+    margin-top: 20%;
+    min-height: 40px;
+    font-size: 36px;
+    font-family: 'Inconsolata';
+    word-spacing: 10px;
+  }

@@ -1,0 +1,183 @@
+
+body {
+  font-family: 'Monarcha-Book';
+  display: block;
+  color: #001489;
+  background-color: #ffffff;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+/* columns */
+
+.container {
+    display: flex;
+}
+
+.contactus {
+  font-size: 18px;
+  position: absolute;
+  width: 98%;
+  text-align: center;
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
+  transform: translateY(50vh);
+  z-index: 999;
+}
+
+.icons {
+  width: 98%;
+  text-align: center;
+  position: absolute;
+  transform: translateY(55vh);
+  -ms-transform: translateY(55vh);
+  padding-right: 5vw;
+  z-index: 99;
+}
+
+.canvas {
+  margin-top: 0;
+  position: absolute;
+  z-index: -1;
+  display: none;
+  transform: translateY(-58vh);
+}
+
+/*
+
+.column {
+    margin-top: 30vh;
+    flex: 2;
+    text-align: center;
+    display: block;
+}
+
+.name-header {
+  font-weight: 600;
+  margin-bottom: -10px;
+  font-style: italic;
+}
+
+.column-header {
+  background-color: #001489;
+  color: white;
+  font-weight: bold;
+  padding: 4px 10px;
+  display: inline-block;
+}
+
+.contactInfo {
+}
+
+.ctv {
+    order: 1;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+.mgmt {
+    order: 2;
+    text-align: right;
+    margin-right: 10vw;
+}
+
+*/
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+   {
+
+  nav {
+    font-size: 4vw;
+  }
+
+  .container {
+      flex-direction: column;
+  }
+
+  .contactus {
+    font-size: 4vw;
+  }
+
+  .icons img {
+    height: 50px;
+    width: 50px;
+  }
+
+  .column-header {
+    font-size: 4vw;
+  }
+
+  .ctv {
+      order: 1;
+      text-align: center;
+      margin:  0 0;
+      margin-top: 25vh;
+  }
+
+  .mgmt {
+      order: 2;
+      text-align: center;
+      margin: 0 0;
+      margin-top: 2vh
+  }
+
+  body {
+    font-size: 3vw;
+  }
+
+  #logo {
+    margin-top: 3vh;
+  }
+
+
+  }
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  nav {
+    font-size: 4vw;
+  }
+
+  body {
+    font-size: 3vw;
+  }
+
+  .contactus {
+    font-size: 4vw;
+  }
+
+  .column-header {
+    font-size: 4vw;
+  }
+
+  .ctv {
+      order: 1;
+      text-align: center;
+      margin:  0 0;
+      margin-top: 25vh;
+  }
+
+  .mgmt {
+      order: 2;
+      text-align: center;
+      margin: 0 0;
+      margin-top: 2vh
+  }
+
+  .container {
+      display: flex;
+  }
+
+  #logo {
+    display: block;
+    margin-top: 3vh;
+
+  }
+
+
+}
