@@ -86,7 +86,7 @@ and (max-device-width: 812px)
     margin-top: 17%;
     min-height: 40px;
     font-size: 36px;
-    font-family: 'Inconsolata';
+    font-family: 'Monarcha-Book';
     word-spacing: 10px;
   }
 
@@ -120,7 +120,7 @@ and (max-device-width: 812px)
 and (-webkit-device-pixel-ratio : 3) {
 
   body {
-    font-family: 'Inconsolata';
+    font-family: 'Monarcha-Book';
     color: #001489;
     background-color: #ffffff;
     font-size: 30px;
@@ -131,7 +131,7 @@ and (-webkit-device-pixel-ratio : 3) {
     margin-top: 17%;
     min-height: 40px;
     font-size: 36px;
-    font-family: 'Inconsolata';
+    font-family: 'Monarcha-Book';
     word-spacing: 10px;
   }
 
