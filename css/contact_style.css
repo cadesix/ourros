@@ -108,6 +108,10 @@ body {
     width: 50px;
   }
 
+  img[src=ourros.svg] {
+    display: none;
+  }
+
   .column-header {
     font-size: 4vw;
   }
@@ -156,6 +160,10 @@ and (-webkit-device-pixel-ratio : 3) {
 
   .column-header {
     font-size: 4vw;
+  }
+
+  img[src=ourros.svg] {
+    display: none;
   }
 
   .ctv {
