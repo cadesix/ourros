@@ -17,22 +17,11 @@
   z-index: 999;
 }
 
-.center {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);
-  margin-top: 7vh;
-}
-
 nav {
     display: flex;
-    /*---*/
     font-family: monarcha, serif;
     font-weight: 300;
     font-style: normal;
-    /*---*/
     z-index: 999;
 }
 
@@ -113,11 +102,11 @@ ul .dropdown {
    {
 
   nav {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #logo {
-    margin-top: 3vh;
+    margin-top: 4vh;
     padding-right: 50px;
 
   }
@@ -134,12 +123,12 @@ and (max-device-width: 812px)
 and (-webkit-device-pixel-ratio : 3) {
 
   nav {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   #logo {
     display: block;
-    margin-top: 3vh;
+    margin-top: 4vh;
     padding-right: 50px;
   }
 

@@ -133,9 +133,9 @@ and (max-device-width: 812px)
     position: relative;
     margin-top: 17%;
     min-height: 40px;
-    font-size: 36px;
     word-spacing: 10px;
   }
+
   #logo {
     display: block;
 
