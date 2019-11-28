@@ -163,11 +163,12 @@ and (-webkit-device-pixel-ratio : 3) {
   }
 
   .projInfo {
-  margin: auto;
+  margin: auto 2vw;
   padding-top: 14vh;
   text-align: center;
   display: block;
-  font-size: 50px;
+  font-size: 40px;
+  line-height: 2vw;
 
   }
 }
