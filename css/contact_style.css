@@ -2,7 +2,7 @@
 body {
   font-family: monarcha, serif;
 font-weight: 300;
-font-style: italic;
+font-style: normal;
   display: block;
   color: #001489;
   background-color: #ffffff;
@@ -57,7 +57,7 @@ font-style: italic;
 .name-header {
   font-weight: 600;
   margin-bottom: -10px;
-  font-style: italic;
+  font-style: normal;
 }
 
 .column-header {
