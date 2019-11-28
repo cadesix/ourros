@@ -30,7 +30,7 @@ body {
   flex-flow: row wrap;
   transform: translateY(25vh);
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, .8fr);
   grid-gap: .2vw;
   position: relative;
   object-fit: fill;
