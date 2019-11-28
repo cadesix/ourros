@@ -86,12 +86,12 @@ and (-webkit-device-pixel-ratio : 3) {
   }
 
   .projInfo {
-  transform: translateY(5vh) !important;
+  transform: translateY(15vh) !important;
   margin: auto 2vw;
   text-align: center;
   display: block;
   font-size: 40px;
-  line-height: 3vw !important;
+  line-height: 4vw !important;
 
   }
 }
