@@ -29,7 +29,8 @@
 nav {
     display: flex;
     /*---*/
-    font-weight: 500;
+    font-family: monarcha, serif;
+    font-weight: 300;
     font-style: normal;
     /*---*/
     z-index: 999;

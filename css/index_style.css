@@ -1,6 +1,9 @@
 
 body {
   background-color: #001489;
+  font-family: monarcha, serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 
@@ -74,6 +77,5 @@ and (-webkit-device-pixel-ratio : 3) {
     margin-top: 20%;
     min-height: 40px;
     font-size: 36px;
-    font-family: 'Monarcha-Book';
     word-spacing: 10px;
   }
