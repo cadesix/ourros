@@ -1,6 +1,8 @@
 
 body {
-  font-family: 'monarcha-book';
+  font-family: monarcha, serif;
+font-weight: 300;
+font-style: italic;
   display: block;
   color: #001489;
   background-color: #ffffff;
