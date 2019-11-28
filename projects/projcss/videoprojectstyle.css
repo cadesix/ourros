@@ -168,7 +168,7 @@ and (-webkit-device-pixel-ratio : 3) {
   text-align: center;
   display: block;
   font-size: 40px;
-  line-height: 2vw;
+  line-height: 3vw;
 
   }
 }
