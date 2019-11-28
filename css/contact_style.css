@@ -23,7 +23,7 @@ font-style: normal;
   text-align: center;
   -ms-transform: translate(-50%);
   transform: translate(-50%);
-  transform: translateY(50vh);
+  transform: translateY(47vh);
   z-index: 999;
 }
 
@@ -100,6 +100,7 @@ font-style: normal;
 
   .contactus {
     font-size: 4vw;
+    transform: translateY(20vh);
   }
 
   .icons img {
