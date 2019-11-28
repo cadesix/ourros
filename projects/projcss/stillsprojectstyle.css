@@ -52,7 +52,6 @@ and (-webkit-device-pixel-ratio : 3) {
   body {
     color: #001489;
     background-color: #ffffff;
-    font-size: 30px;
   }
 
   .nav {
@@ -91,6 +90,7 @@ and (-webkit-device-pixel-ratio : 3) {
   text-align: center;
   display: block;
   transform: translateY(14vh);
+  font-size: 50px;
 
   }
 }
