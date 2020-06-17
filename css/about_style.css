@@ -1,8 +1,9 @@
 
 body {
-  font-family: monarcha, serif;
+  font-family: ocr-b-std, serif;
   font-weight: 300;
   font-style: normal;
+  letter-spacing: .5px;
   color: #001489;
   background-color: #ffffff;
   font-size: 18px;
