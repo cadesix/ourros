@@ -1,0 +1,56 @@
+body {
+  font-family: helvetica;
+  font-weight: 200;
+  color: white;
+  background-color: #000000;
+  overflow-x: hidden;
+}
+
+.masthead {
+  text-align: center;
+  font-size: 10vh;
+}
+
+.intro {
+  text-align: center;
+  font-size: 20px;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vh;
+}
+
+.tracks {
+  height: 5vh;
+  padding-bottom: 2vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.tracktitle  {
+  height: 5vh;
+  font-size: 20px;
+  margin-left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+iframe {
+  margin-top: 3vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 5vh;
+
+}
+
+.photo img {
+  width: 40vw;
+  padding-bottom: 2vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+audio {
+  margin-bottom: 5vh;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
