@@ -492,7 +492,7 @@ THREE.OBJLoader = ( function () {
 					var vertexData = lineData.split( /\s+/ );
 					var faceVertices = [];
 
-					// Parse the face vertex data into an easy to Work with format
+					// Parse the face vertex data into an easy to work with format
 
 					for ( var j = 0, jl = vertexData.length; j < jl; j ++ ) {
 
@@ -560,7 +560,7 @@ THREE.OBJLoader = ( function () {
 					// or
 					// g group_name
 
-					// WorkAROUND: https://bugs.chromium.org/p/v8/issues/detail?id=2869
+					// WORKAROUND: https://bugs.chromium.org/p/v8/issues/detail?id=2869
 					// var name = result[ 0 ].substr( 1 ).trim();
 					var name = ( " " + result[ 0 ].substr( 1 ).trim() ).substr( 1 );
 

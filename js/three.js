@@ -1184,7 +1184,7 @@
 
 			var x = euler._x, y = euler._y, z = euler._z, order = euler.order;
 
-			// http://www.mathWorks.com/matlabcentral/fileexchange/
+			// http://www.mathworks.com/matlabcentral/fileexchange/
 			// 	20696-function-to-convert-between-dcm-euler-angles-quaternions-and-euler-vectors/
 			//	content/SpinCalc.m
 
@@ -8177,7 +8177,7 @@
 	 * @author mikael emtinger / http://gomo.se/
 	 * @author alteredq / http://alteredqualia.com/
 	 * @author WestLangley / http://github.com/WestLangley
-	 * @author elephantatWork / www.elephantatWork.ch
+	 * @author elephantatwork / www.elephantatwork.ch
 	 */
 
 	var object3DId = 0;
@@ -9670,7 +9670,7 @@
 				tmpGeo.computeFaceNormals();
 				tmpGeo.computeVertexNormals();
 
-				// Store morph normals
+				// store morph normals
 
 				var faceNormal, vertexNormals;
 
@@ -9691,7 +9691,7 @@
 
 			}
 
-			// reStore original normals
+			// restore original normals
 
 			for ( f = 0, fl = this.faces.length; f < fl; f ++ ) {
 
@@ -9903,7 +9903,7 @@
 
 			// if faces are completely degenerate after merging vertices, we
 			// have to remove them from the geometry.
-			var faceIndiceStoremove = [];
+			var faceIndicesToRemove = [];
 
 			for ( i = 0, il = this.faces.length; i < il; i ++ ) {
 
@@ -9921,7 +9921,7 @@
 
 					if ( indices[ n ] === indices[ ( n + 1 ) % 3 ] ) {
 
-						faceIndiceStoremove.push( i );
+						faceIndicesToRemove.push( i );
 						break;
 
 					}
@@ -9930,9 +9930,9 @@
 
 			}
 
-			for ( i = faceIndiceStoremove.length - 1; i >= 0; i -- ) {
+			for ( i = faceIndicesToRemove.length - 1; i >= 0; i -- ) {
 
-				var idx = faceIndiceStoremove[ i ];
+				var idx = faceIndicesToRemove[ i ];
 
 				this.faces.splice( idx, 1 );
 
@@ -20212,7 +20212,7 @@
 
 		function createCanvas( width, height ) {
 
-			// Use OffscreenCanvas when available. Specially needed in web Workers
+			// Use OffscreenCanvas when available. Specially needed in web workers
 
 			return useOffscreenCanvas ?
 				new OffscreenCanvas( width, height ) :
@@ -22799,7 +22799,7 @@
 			// event listeners must be registered before WebGL context is created, see #12753
 
 			_canvas.addEventListener( 'webglcontextlost', onContextLost, false );
-			_canvas.addEventListener( 'webglcontextreStored', onContextReStore, false );
+			_canvas.addEventListener( 'webglcontextrestored', onContextRestore, false );
 
 			_gl = _context || _canvas.getContext( 'webgl', contextAttributes ) || _canvas.getContext( 'experimental-webgl', contextAttributes );
 
@@ -22939,10 +22939,10 @@
 
 		};
 
-		this.forceContextReStore = function () {
+		this.forceContextRestore = function () {
 
 			var extension = extensions.get( 'WEBGL_lose_context' );
-			if ( extension ) extension.reStoreContext();
+			if ( extension ) extension.restoreContext();
 
 		};
 
@@ -23161,7 +23161,7 @@
 		this.dispose = function () {
 
 			_canvas.removeEventListener( 'webglcontextlost', onContextLost, false );
-			_canvas.removeEventListener( 'webglcontextreStored', onContextReStore, false );
+			_canvas.removeEventListener( 'webglcontextrestored', onContextRestore, false );
 
 			renderLists.dispose();
 			renderStates.dispose();
@@ -23186,9 +23186,9 @@
 
 		}
 
-		function onContextReStore( /* event */ ) {
+		function onContextRestore( /* event */ ) {
 
-			console.log( 'THREE.WebGLRenderer: Context ReStored.' );
+			console.log( 'THREE.WebGLRenderer: Context Restored.' );
 
 			_isContextLost = false;
 
@@ -23511,7 +23511,7 @@
 
 						var attribute = attributes.get( geometryAttribute );
 
-						// TODO Attribute may not be available on context reStore
+						// TODO Attribute may not be available on context restore
 
 						if ( attribute === undefined ) continue;
 
@@ -24189,7 +24189,7 @@
 
 			materialProperties.fog = fog;
 
-			// Store the light setup it was created for
+			// store the light setup it was created for
 			if ( lightsHash === undefined ) {
 
 				materialProperties.lightsHash = lightsHash = {};
@@ -25112,13 +25112,13 @@
 
 			if ( framebuffer ) {
 
-				var reStore = false;
+				var restore = false;
 
 				if ( framebuffer !== _currentFramebuffer ) {
 
 					_gl.bindFramebuffer( 36160, framebuffer );
 
-					reStore = true;
+					restore = true;
 
 				}
 
@@ -25162,7 +25162,7 @@
 
 				} finally {
 
-					if ( reStore ) {
+					if ( restore ) {
 
 						_gl.bindFramebuffer( 36160, _currentFramebuffer );
 
@@ -26928,7 +26928,7 @@
 		this.mipmaps = mipmaps;
 
 		// no flipping for cube textures
-		// (also flipping doesn't Work for compressed textures )
+		// (also flipping doesn't work for compressed textures )
 
 		this.flipY = false;
 
@@ -27324,7 +27324,7 @@
 	ParametricBufferGeometry.prototype.constructor = ParametricBufferGeometry;
 
 	/**
-	 * @author clockWorkgeek / https://github.com/clockWorkgeek
+	 * @author clockworkgeek / https://github.com/clockworkgeek
 	 * @author timothypratley / https://github.com/timothypratley
 	 * @author WestLangley / http://github.com/WestLangley
 	 * @author Mugen87 / https://github.com/Mugen87
@@ -28614,7 +28614,7 @@
 
 					earcutLinked( filterPoints( ear ), triangles, dim, minX, minY, invSize, 1 );
 
-					// if this didn't Work, try curing all small self-intersections locally
+					// if this didn't work, try curing all small self-intersections locally
 
 				} else if ( pass === 1 ) {
 
@@ -32430,7 +32430,7 @@
 
 	var AnimationUtils = {
 
-		// same as Array.prototype.slice, but also Works on typed arrays
+		// same as Array.prototype.slice, but also works on typed arrays
 		arraySlice: function ( array, from, to ) {
 
 			if ( AnimationUtils.isTypedArray( array ) ) {
@@ -34775,7 +34775,7 @@
 
 			} else {
 
-				// compressed cubemap texture Stored in a single DDS file
+				// compressed cubemap texture stored in a single DDS file
 
 				loader.load( url, function ( buffer ) {
 
@@ -35663,7 +35663,7 @@
 			var tx = x - this.aX;
 			var ty = y - this.aY;
 
-			// Rotate the point About the center of the ellipse.
+			// Rotate the point about the center of the ellipse.
 			x = tx * cos - ty * sin + this.aX;
 			y = tx * sin + ty * cos + this.aY;
 
@@ -36688,7 +36688,7 @@
 			var curveLengths = this.getCurveLengths();
 			var i = 0;
 
-			// To think About boundaries points.
+			// To think about boundaries points.
 
 			while ( i < curveLengths.length ) {
 
@@ -38450,7 +38450,7 @@
 						case 'TubeGeometry':
 						case 'TubeBufferGeometry':
 
-							// This only Works for built-in curves (e.g. CatmullRomCurve3).
+							// This only works for built-in curves (e.g. CatmullRomCurve3).
 							// User defined curves or instances of CurvePath will not be deserialized.
 							geometry = new Geometries[ data.type ](
 								new Curves[ data.path.type ]().fromJSON( data.path ),
@@ -41082,7 +41082,7 @@
 		// the cumulative result and are compared to detect
 		// changes
 		//
-		// 'orig' Stores the original state of the property
+		// 'orig' stores the original state of the property
 
 		this._mixBufferRegion = mixFunction;
 
@@ -41196,7 +41196,7 @@
 		},
 
 		// apply the state previously taken via 'saveOriginalState' to the binding
-		reStoreOriginalState: function () {
+		restoreOriginalState: function () {
 
 			var originalValueOffset = this.valueSize * 3;
 			this.binding.setValue( this.buffer, originalValueOffset );
@@ -42308,7 +42308,7 @@
 
 		unsubscribe_: function ( path ) {
 
-			// tells the group to forget About a property path and no longer
+			// tells the group to forget about a property path and no longer
 			// update the array previously obtained with 'subscribe_'
 
 			var indicesByPath = this._bindingsIndicesByPath,
@@ -43158,7 +43158,7 @@
 
 					if ( -- binding.useCount === 0 ) {
 
-						binding.reStoreOriginalState();
+						binding.restoreOriginalState();
 						this._takeBackBinding( binding );
 
 					}
@@ -43681,11 +43681,11 @@
 				// iteration state and also require updating the state we can
 				// just throw away
 
-				var actionStoremove = actionsForClip.knownActions;
+				var actionsToRemove = actionsForClip.knownActions;
 
-				for ( var i = 0, n = actionStoremove.length; i !== n; ++ i ) {
+				for ( var i = 0, n = actionsToRemove.length; i !== n; ++ i ) {
 
-					var action = actionStoremove[ i ];
+					var action = actionsToRemove[ i ];
 
 					this._deactivateAction( action );
 
@@ -43737,7 +43737,7 @@
 				for ( var trackName in bindingByName ) {
 
 					var binding = bindingByName[ trackName ];
-					binding.reStoreOriginalState();
+					binding.restoreOriginalState();
 					this._removeInactiveBinding( binding );
 
 				}
