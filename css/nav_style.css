@@ -19,8 +19,8 @@
 
 nav {
     display: flex;
-    font-family: monarcha, serif;
-    font-weight: 300;
+    font-family: acumin-pro;
+    font-weight: 400;
     font-style: normal;
     z-index: 999;
 }
@@ -154,7 +154,7 @@ and (-webkit-device-pixel-ratio : 3) {
     background-color: white;
   }
 
-  .workLink {
+  .WorkLink {
     pointer-events: none;
   }
 

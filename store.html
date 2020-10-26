@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/vkb1zde.css">
   <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
   <link rel="stylesheet" type="text/css" href="css/nav_style.css">
-  <link rel="stylesheet" type="text/css" href="css/store_style.css">
+  <link rel="stylesheet" type="text/css" href="css/Store_style.css">
   <script src="js/three.js"></script>
   <script src="js/OBJLoader.js"></script>
   <script src="js/OrbitControls.js"></script>
@@ -16,19 +16,19 @@
 
   <nav role="navigation" class="center">
     <ul class="left">
-      <li><a href="/work.html">work</a>
+      <li><a href="/Work.html">Work</a>
         <ul class="dropdown">
-          <li><a href="/work.html">featured</a></li><br>
+          <li><a href="/Work.html">featured</a></li><br>
           <li><a href="video.html">music video</a></li><br>
           <li><a href="design.html">design</a></li><br>
           <li><a href="photo.html">photography</a></li><br>
         </ul>
       </li>
-      <li><a href="about.html">about</a></li>
+      <li><a href="About.html">About</a></li>
     </ul>
     <ul class="right">
-      <li><a href="contact.html">contact</a></li>
-      <li><a href="store.html">store</a></li>
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Store.html">Store</a></li>
     </ul>
   </nav>
 
@@ -38,7 +38,7 @@
 <script type="text/javascript">
 /*<![CDATA[*/
 (function () {
-  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-Storefront.min.js';
   if (window.ShopifyBuy) {
     if (window.ShopifyBuy.UI) {
       ShopifyBuyInit();
@@ -59,7 +59,7 @@
   function ShopifyBuyInit() {
     var client = ShopifyBuy.buildClient({
       domain: 'ourros.myshopify.com',
-      storefrontAccessToken: '3dff5b575b9bc90ce921d73bf41ff493',
+      StorefrontAccessToken: '3dff5b575b9bc90ce921d73bf41ff493',
     });
 
     ShopifyBuy.UI.onReady(client).then(function (ui) {

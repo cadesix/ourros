@@ -1,7 +1,7 @@
 
 body {
-  font-family: monarcha, serif;
-  font-weight: 300;
+  font-family: acumin-pro;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: .5px;
   color: #001489;
@@ -54,7 +54,7 @@ body {
        font-size: 3vw;
      }
 
-     .aboutus {
+     .Aboutus {
        padding-top: 18vh;
      }
 

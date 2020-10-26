@@ -1,7 +1,7 @@
 
 body {
-  font-family: monarcha, serif;
-  font-weight: 300;
+  font-family: acumin-pro;
+  font-weight: 600;
   font-style: normal;
   display: block;
   color: #001489;
@@ -16,7 +16,7 @@ body {
     display: flex;
 }
 
-.contactus {
+.Contactus {
   font-size: 18px;
   position: absolute;
   width: 98%;
@@ -68,7 +68,7 @@ body {
   display: inline-block;
 }
 
-.contactInfo {
+.ContactInfo {
 }
 
 .ctv {
@@ -98,7 +98,7 @@ body {
       flex-direction: column;
   }
 
-  .contactus {
+  .Contactus {
     font-size: 4vw;
     transform: translateY(40vh);
   }
@@ -154,7 +154,7 @@ and (-webkit-device-pixel-ratio : 3) {
     font-size: 3vw;
   }
 
-  .contactus {
+  .Contactus {
     font-size: 4vw;
   }
 
