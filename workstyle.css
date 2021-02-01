@@ -73,3 +73,93 @@ a:active {
   text-decoration: none;
   color: #3B3B3E;
 }
+
+@media only screen
+and (max-device-width: 812px){
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 90%;
+    width: 20%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .store {
+    padding-top: 200%;
+  }
+
+
+  nav {
+
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Syndicat';
+    font-size: 4vw;
+  }
+
+  .info {
+    display: block;
+    margin: 0 auto;
+    padding-top: 90%;
+    text-align: center;
+    font-family: 'Syndicat';
+    color: #3B3B3E;
+    font-size: 4vw;
+  }
+
+}
+
+
+
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width: 812px)
+and (-webkit-device-pixel-ratio : 3) {
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 90%;
+    width: 20%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .store {
+    padding-top: 200%;
+  }
+
+
+  nav {
+
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    font-family: 'Syndicat';
+    font-size: 4vw;
+  }
+
+  .info {
+    display: block;
+    margin: 0 auto;
+    padding-top: 90%;
+    text-align: center;
+    font-family: 'Syndicat';
+    color: #3B3B3E;
+    font-size: 4vw;
+  }
+
+}
+
+
+}
