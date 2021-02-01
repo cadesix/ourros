@@ -1,0 +1,50 @@
+body {
+  background-color: black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.store {
+  padding-top: 200%;
+}
+
+ @font-face { font-family: 'Syndicat'; src: url('syndicat.otf') format('opentype'); }
+
+nav {
+
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Syndicat';
+}
+
+
+
+a:link {
+  text-decoration: none;
+  color: #3B3B3E;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #3B3B3E;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  text-decoration: none;
+  color: #3B3B3E;
+}
