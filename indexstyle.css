@@ -24,8 +24,11 @@ nav {
   font-family: 'Syndicat';
   word-spacing: 7px;
 
-  position: relative;
-  margin-top: 40vh;
+
+  width:100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
 }
 
