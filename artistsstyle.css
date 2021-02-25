@@ -114,6 +114,13 @@ and (max-device-width: 812px)
     width: 15%;
   }
 
+  .names {
+    text-align: center;
+    font-family: 'Syndicat';
+    margin-top: 50%;
+  }
+
+/**
   .grid-container {
     display: flex;
     align-items: center;
@@ -127,6 +134,7 @@ and (max-device-width: 812px)
     width: 100%;
   }
 
+
   .info {
     opacity: 1;
     font-size: 36px;
@@ -135,6 +143,8 @@ and (max-device-width: 812px)
   .row {
     width: 100%;
   }
+
+  **/
 }
 
 ::-webkit-scrollbar {
