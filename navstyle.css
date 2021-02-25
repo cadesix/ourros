@@ -1,19 +1,23 @@
-body {
-  background-color: black;
-  overflow: hidden; /* Hide scrollbars */
-}
-
 img {
   display: block;
   margin: 0 auto;
   margin-top: 1%;
 }
 
-.store {
-  padding-top: 200%;
+.logo {
+  width: 100%;
 }
 
- @font-face { font-family: 'Syndicat'; src: url('syndicat.otf') format('opentype'); }
+@font-face { font-family: 'Syndicat'; src: url('syndicat.otf') format('opentype'); }
+
+nav {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Syndicat';
+  word-spacing: 7px;
+}
 
 a:link {
   text-decoration: none;
@@ -38,10 +42,6 @@ a:active {
 @media only screen
 and (max-device-width: 812px)
 {
-
-  body {
-    font-size: 36px;
-  }
 
   .logosmall img {
     display: block;

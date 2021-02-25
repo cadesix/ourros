@@ -70,14 +70,6 @@ body {
 
  @font-face { font-family: 'Syndicat'; src: url('syndicat.otf') format('opentype'); }
 
-nav {
-  display: block;
-  margin: 0 auto;
-  padding-top: 20px;
-  text-align: center;
-  font-family: 'Syndicat';
-}
-
 a:link {
   text-decoration: none;
   color: #3B3B3E;
