@@ -52,6 +52,23 @@ a:active {
   color: #3B3B3E;
 }
 
+@media only screen
+and (max-device-width: 812px)
+{
+
+  body {
+    font-size: 36px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40%;
+    width: 30%;
+  }
+}
+
+
 ::-webkit-scrollbar {
     display: none; /* Chrome Safari */
 }
